@@ -1,0 +1,65 @@
+.navbar {
+  height: 80px;
+  width: 100%;
+  background-color: #f8f9fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 160px;
+  padding-right: 160px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.navbar .logo {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 100%;
+}
+.navbar .logo img {
+  width: 65px;
+  height: 100%;
+}
+.navbar .anchors {
+  display: flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+.navbar .anchors .item {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #15141A;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Sarabun", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+  border-bottom: 2px solid transparent;
+}
+.navbar .anchors .item:hover {
+  color: #0172d0;
+  border-bottom: 2px solid #0172d0;
+}
+.navbar .pipe {
+  height: 60%;
+  width: 2px;
+  background-color: #15141A;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar .social {
+  font-size: 24px;
+  color: black !important;
+  margin-right: 10px;
+  margin-left: 10px;
+}/*# sourceMappingURL=navbar.module.css.map */

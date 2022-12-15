@@ -1,0 +1,30 @@
+.team {
+    .banner {
+        background-image: url("https://www.liquidbarriersolutions.com/img/team-banner.jpg");
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 60px;
+        font-size: 40px;
+        line-height: 1;
+        font-weight: 700;
+    }
+    .about {
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 40px;
+        .title {
+            color: #dc3545;
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .content {}
+    }
+    .people {
+        margin-top: 40px;
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}

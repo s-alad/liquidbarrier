@@ -1,0 +1,27 @@
+.services .banner {
+  background-image: url("https://www.liquidbarriersolutions.com/img/services-pages-banner.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 60px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+}
+.services .info {
+  padding-top: 40px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.services .info .title {
+  font-size: 36px;
+  color: #dc3545;
+  font-weight: 700;
+}
+.services .info .subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}/*# sourceMappingURL=services.module.css.map */
