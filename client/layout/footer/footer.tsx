@@ -1,5 +1,6 @@
 import s from './footer.module.css';
 import Image from 'next/image'
+import Link from 'next/link';
 
 export default function Footer() {
     return (
@@ -20,9 +21,9 @@ export default function Footer() {
                         <div className={s.item}>Industry: Writing & Editing</div>
                     </div>
                     <div className={s.column}>
-                        <div className={s.top}>About</div>
-                        <div className={s.item}>Diversity & Inclusion</div>
-                        <div className={s.item}>Company History</div>
+                        <Link href={'/about-us'}><div className={s.top}>About</div></Link>
+                        <Link href={'/diversity-inclusion'}><div className={s.item}>Diversity & Inclusion</div></Link>
+                        <Link href={'/company-history'}><div className={s.item}>Company History</div></Link>
                     </div>
                     <div className={s.column}>
                         <div className={s.top}>Insights & Ideas</div>
@@ -33,9 +34,9 @@ export default function Footer() {
                     </div>
                     <div className={s.column}>
                         <div className={s.top}>Other Links</div>
-                        <div className={s.item}>Our Team</div>
-                        <div className={s.item}>Contact Us</div>
-                        <div className={s.item}>Our Services</div>
+                        <Link href={'/team'}><div className={s.item}>Our Team</div></Link>
+                        <Link href={'/contact'}><div className={s.item}>Contact Us</div></Link>
+                        <Link href={'/our-services'}><div className={s.item}>Our Services</div></Link>
                     </div>
                 </div>
                 <div className={s.copyright}>

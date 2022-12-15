@@ -1,0 +1,44 @@
+.history .banner {
+  background-image: url("https://www.liquidbarriersolutions.com/img/company-history-banner.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 60px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+}
+.history .brief {
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 40px;
+}
+.history .brief .title {
+  font-size: 36px;
+  color: #dc3545;
+  font-weight: 700;
+}
+.history .statistics {
+  padding-top: 40px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.history .statistics .title {
+  font-size: 36px;
+  color: #dc3545;
+  font-weight: 700;
+}
+.history .statistics .stats {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+}
+.history .statistics .stats .stat {
+  width: 30%;
+}
+.history .statistics .stats .stat .num {
+  font-size: 56px;
+  font-weight: 700;
+}/*# sourceMappingURL=history.module.css.map */

@@ -14,6 +14,7 @@
   padding-top: 40px;
   padding-left: 160px;
   padding-right: 160px;
+  padding-bottom: 40px;
 }
 .services .info .title {
   font-size: 36px;
@@ -24,4 +25,25 @@
   font-size: 20px;
   font-weight: 400;
   color: #fff;
+}
+.services .content {
+  padding-left: 160px;
+  padding-right: 160px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+}
+.services .content .service {
+  border: 2px solid white;
+  padding: 30px;
+  height: 320px;
+  /* width: 25%; */
+  /* margin-bottom: 40px; */
+}
+.services .content .service .title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 22px;
 }/*# sourceMappingURL=services.module.css.map */

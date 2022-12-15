@@ -1,0 +1,52 @@
+.history {
+    .banner {
+        background-image: url("https://www.liquidbarriersolutions.com/img/company-history-banner.jpg");
+        background-size: cover;
+        height: 300px;
+        width: 100%;
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 60px;
+        font-size: 40px;
+        line-height: 1;
+        font-weight: 700;
+    }
+    .brief {
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 40px;
+        .title {
+            font-size: 36px;
+            color: #dc3545;
+            font-weight: 700;
+        }
+        .bio {
+
+        }
+    }
+    .statistics {
+        padding-top: 40px;
+        padding-left: 160px;
+        padding-right: 160px;
+        .title {
+            font-size: 36px;
+            color: #dc3545;
+            font-weight: 700;
+        }
+        .stats {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: row;
+            .stat {
+                width: 30%;
+                .num {
+                    font-size: 56px;
+                    font-weight: 700;
+                }
+                .value {
+    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.home .banner {
+  background-image: url("https://www.liquidbarriersolutions.com/assets/img/slider/write2.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 60px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+}
+.home .content {
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.home .content .highlight {
+  border: 2px solid white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+}
+.home .content .highlight .title {
+  font-size: 36px;
+  color: #dc3545;
+  font-weight: 700;
+}
+.home .content .highlight .splash {
+  margin-top: 20px;
+  height: 200px;
+  width: 100%;
+}
+.home .content .highlight .splash img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=home.module.css.map */

@@ -11,11 +11,12 @@
     padding-right: 160px;
     position: sticky;
     top: 0;
+    z-index: 99;
 
     .logo {
         width: min-content;
-        padding-right: 15px;
-        padding-left: 15px;
+/*         padding-right: 15px;
+        padding-left: 15px; */
         height: 100%;
         img {
             width: 65px;
@@ -26,6 +27,8 @@
         display: flex;
         width: min-content;
         .item {
+            position: relative;
+            display: inline-block;
             width: min-content;
             margin-right: 10px;
             margin-left: 10px;
@@ -41,6 +44,31 @@
                 color: #0172d0;
                 border-bottom: 2px solid #0172d0;
             }
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            padding-top: 14px;
+            .dropped {
+                background-color: #fff;
+                color: black !important;
+                width: min-content;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                .drop {
+                    padding: 12px 16px;
+                    color: 'black';
+                    font-size: 16px;
+                    font-weight: 400;
+                    border-bottom: 1px solid black;
+                    &:hover {
+                        color: #0172d0;
+                    }
+                }
+            }
+          }
+        .item:hover .dropdown {
+            display: block;
         }
     }
     .pipe {

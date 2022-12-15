@@ -1,0 +1,128 @@
+.contact {
+    width: 100%;
+    .map {
+        width: 100%;
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 60px;
+        iframe {
+            width: 100%;
+            border:0;filter: grayscale(100%) invert(92%) contrast(83%);
+            z-index: -1;
+        }
+    }
+    .comment {
+        padding-left: 160px;
+        padding-right: 160px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .contactus {
+        width: 100%;
+        padding-left: 160px;
+        padding-right: 160px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @mixin title {
+            font-size: 36px;
+            color: #dc3545;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        button {
+            width: 100%;
+            height: 45px;
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            border: 1px solid white;
+            margin-top: 30px;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+            &:hover {
+                color: #0172d0;
+            }
+        }
+        .us {
+            .title {
+                @include title;
+            }
+            width: 48%;
+
+            .form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    input {
+                        width: 48%;
+                        background-color: white;
+                        border: none;
+                        text-decoration: none;
+                        height: 45px;
+                        padding: 10px;
+                        color: black;
+                        font-size:16px;
+                    }
+                    margin-bottom: 30px
+                }
+                textarea {
+                    background-color: white;
+                    border: none;
+                    text-decoration: none;
+                    height: 150px;
+                    padding: 10px;
+                    color: black;
+                    font-size:16px;
+                }
+            }
+            
+        }
+        .follow {
+            .title {
+                @include title;
+            }
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            .seperator {
+                width: 100%;
+                height: 1px;
+                background-color: #fff;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            .line {
+                font-size: 16px;
+                font-weight: 400;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                i {
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+            }
+            .socials {
+                display: flex;
+                flex-direction: column;
+                .line {
+                    margin-bottom: 10px;
+                }
+                i {
+                    width: 25px;
+                }
+                .social {
+                    /* font-size: 24px; color: white; margin-right: 20px; */
+                }
+            }
+        }
+    }
+}
