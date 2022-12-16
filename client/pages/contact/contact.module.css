@@ -107,7 +107,7 @@
   flex-direction: row;
   align-items: center;
 }
-.contact .contactus .follow .line i {
+.contact .contactus .follow .line i, .contact .contactus .follow .line svg {
   margin-right: 10px;
   font-size: 18px;
 }
@@ -118,9 +118,13 @@
 .contact .contactus .follow .socials .line {
   margin-bottom: 10px;
 }
+.contact .contactus .follow .socials a {
+  width: 30px;
+}
 .contact .contactus .follow .socials i {
   width: 25px;
 }
 .contact .contactus .follow .socials .social {
   /* font-size: 24px; color: white; margin-right: 20px; */
+  /* padding-right: 100px; */
 }/*# sourceMappingURL=contact.module.css.map */

@@ -1,4 +1,9 @@
 import s from './contact.module.css';
+import {faFacebookF, faTwitter, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+import { faFax, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link';
 
 export default function Contact() {
     return (
@@ -27,27 +32,43 @@ export default function Contact() {
                 </div>
                 <div className={s.follow}>
                     <div className={s.title}>Follow Us</div>
-                    <div className={s.line}><i aria-hidden className={"fa fa-fax "}></i> Address : Irvington, NJ</div>
+                    <div className={s.line}>
+                        {/* <i aria-hidden className={"fa fa-fax "}></i>  */}
+                        <FontAwesomeIcon icon={faFax} className={s.social}/>
+                        Address : Irvington, NJ
+                    </div>
                     <div className={s.seperator}></div>
-                    <div className={s.line}><i aria-hidden className={"fa fa-envelope-o"}></i> Email: writing@liquidbarriersolutions.com</div>
+                    <div className={s.line}>
+                        {/* <i aria-hidden className={"fa fa-envelope-o"}></i> */}
+                        <FontAwesomeIcon icon={faEnvelope} className={s.social}/>
+                        Email: writing@liquidbarriersolutions.com
+                    </div>
                     <div className={s.seperator}></div>
-                    <div className={s.line}><i aria-hidden className={"fa fa-phone"}></i> Phone: 201-303-5541</div>
+                    <div className={s.line}>
+                        {/* <i aria-hidden className={"fa fa-phone"}></i>  */}
+                        <FontAwesomeIcon icon={faPhone} className={s.social}/>
+                        Phone: 201-303-5541
+                    </div>
                     <div className={s.seperator}></div>
                     <div className={s.socials}>
                         <div className={s.line}>
-                            <a href="https://www.facebook.com/liquidbarrier/"><i aria-hidden className={"fa fa-facebook "+s.social}></i></a>
+                            {/* <a href="https://www.facebook.com/liquidbarrier/"><i aria-hidden className={"fa fa-facebook "+s.social}></i></a> */}
+                            <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faFacebookF} className={s.social}/></Link>
                             Facebook: liquidbarrier
                         </div>
                         <div className={s.line}>
-                            <a href="https://www.twitter.com"><i aria-hidden className={"fa fa-twitter "+s.social}></i></a>
+                            {/* <a href="https://www.twitter.com"><i aria-hidden className={"fa fa-twitter "+s.social}></i></a> */}
+                            <Link href="https://www.twitter.com"><FontAwesomeIcon icon={faTwitter} className={s.social}/></Link>
                             Twitter: @liquidbarrier
                         </div>
                         <div className={s.line}>
-                            <a href="https://www.instagram.com/liquidbarrier/"><i aria-hidden className={"fa fa-instagram "+s.social}></i></a>
+                            {/* <a href="https://www.instagram.com/liquidbarrier/"><i aria-hidden className={"fa fa-instagram "+s.social}></i></a> */}
+                            <Link href="https://www.instagram.com/liquidbarrier/"><FontAwesomeIcon icon={faInstagram} className={s.social}/></Link>
                             Instagram: @liquidbarrier
                         </div>
                         <div className={s.line}>
-                            <a href="https://www.linkedin.com/company/liquidbarrier"><i aria-hidden className={"fa fa-linkedin "+s.social}></i></a>
+                            {/* <a href="https://www.linkedin.com/company/liquidbarrier"><i aria-hidden className={"fa fa-linkedin "+s.social}></i></a> */}
+                            <Link href="https://www.linkedin.com/company/liquidbarrier"><FontAwesomeIcon icon={faLinkedinIn} className={s.social}/></Link>
                             Linkedin: liquidbarrier
                         </div>
                     </div>

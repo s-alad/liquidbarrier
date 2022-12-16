@@ -1,6 +1,8 @@
 import s from './footer.module.css';
 import Image from 'next/image'
 import Link from 'next/link';
+import {faFacebookF, faTwitter, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
     return (
@@ -41,10 +43,14 @@ export default function Footer() {
                 </div>
                 <div className={s.copyright}>
                     <div className={s.socials}>
-                        <a href="https://www.facebook.com/liquidbarrier/"><i aria-hidden className={"fa fa-facebook "+s.social}></i></a>
-                        <a href="https://www.twitter.com"><i aria-hidden className={"fa fa-twitter "+s.social}></i></a>
-                        <a href="https://www.instagram.com/liquidbarrier/"><i aria-hidden className={"fa fa-instagram "+s.social}></i></a>
-                        <a href="https://www.linkedin.com/company/liquidbarrier"><i aria-hidden className={"fa fa-linkedin "+s.social}></i></a>
+                        <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faFacebookF} className={s.social}/></Link>
+                        <Link href="https://www.twitter.com"><FontAwesomeIcon icon={faTwitter} className={s.social}/></Link>
+                        <Link href="https://www.instagram.com/liquidbarrier/"><FontAwesomeIcon icon={faInstagram} className={s.social}/></Link>
+                        <Link href="https://www.linkedin.com/company/liquidbarrier"><FontAwesomeIcon icon={faLinkedinIn} className={s.social}/></Link>
+                        {/* <Link href="https://www.facebook.com/liquidbarrier/"><i aria-hidden className={"fa fa-facebook "+s.social}></i></Link>
+                        <Link href="https://www.twitter.com"><i aria-hidden className={"fa fa-twitter "+s.social}></i></Link>
+                        <Link href="https://www.instagram.com/liquidbarrier/"><i aria-hidden className={"fa fa-instagram "+s.social}></i></Link>
+                        <Link href="https://www.linkedin.com/company/liquidbarrier"><i aria-hidden className={"fa fa-linkedin "+s.social}></i></Link> */}
                     </div>
                     <div className={s.rights}>copyright © 2021</div>
                 </div>

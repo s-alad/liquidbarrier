@@ -1,6 +1,8 @@
 import s from './navbar.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import {faFacebookF, faTwitter, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Navbar() {
     return (
@@ -44,10 +46,14 @@ export default function Navbar() {
                 <Link href={'/contact'}><div className={s.item}>Contact Us</div></Link>
             </div>
             <div className={s.pipe}></div>
-            <Link href="https://www.facebook.com/liquidbarrier/"><i aria-hidden className={"fa fa-facebook "+s.social}></i></Link>
-            <Link href="https://www.twitter.com"><i aria-hidden className={"fa fa-twitter "+s.social}></i></Link>
-            <Link href="https://www.instagram.com/liquidbarrier/"><i aria-hidden className={"fa fa-instagram "+s.social}></i></Link>
-            <Link href="https://www.linkedin.com/company/liquidbarrier"><i aria-hidden className={"fa fa-linkedin "+s.social}></i></Link>
+            <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faFacebookF} className={s.social}/></Link>
+            <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faTwitter} className={s.social}/></Link>
+            <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faInstagram} className={s.social}/></Link>
+            <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faLinkedinIn} className={s.social}/></Link>
+            {/* <Link href="https://www.facebook.com/liquidbarrier/"><i aria-hidden className={"fa fa-facebook "+s.social}></i></Link> */}
+            {/* <Link href="https://www.twitter.com"><i aria-hidden className={"fa fa-twitter "+s.social}></i></Link> */}
+            {/* <Link href="https://www.instagram.com/liquidbarrier/"><i aria-hidden className={"fa fa-instagram "+s.social}></i></Link> */}
+            {/* <Link href="https://www.linkedin.com/company/liquidbarrier"><i aria-hidden className={"fa fa-linkedin "+s.social}></i></Link> */}
         </div>
     )
 }
