@@ -24,6 +24,18 @@
         }
         .content {
             margin-left: 34px;
+            .row {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                a {
+                    margin-right: 10px;
+                    padding-top: 2px;
+                    svg {
+                        font-size: 24px;
+                    }
+                }
+            }
             .title {
                 color: #dc3545;
                 font-size: 28px;

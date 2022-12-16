@@ -1,10 +1,14 @@
 import s from './person.module.css'
 import Image from 'next/image'
+import {faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 
 interface PersonProps {
     name: string,
     bio: string,
-    position: string
+    position: string,
+    linkedin: string,
 }
 
 export default function Person(person : PersonProps) {
@@ -19,7 +23,10 @@ export default function Person(person : PersonProps) {
                         className={s.image}/>
                 <div className={s.content}>
                     <h1 className={s.title}>{person.name}</h1>
-                    <h2 className={s.position}>{person.position}</h2>
+                    <div className={s.row}>
+                        <Link href={person.linkedin} target={'_blank'}><FontAwesomeIcon icon={faLinkedin} /></Link>
+                        <h2 className={s.position}>{person.position}</h2>
+                    </div>
                     <p className={s.bio}>{person.bio}</p>
                 </div>
             </div>
