@@ -1,6 +1,21 @@
 import s from './history.module.css';
+import dynamic from 'next/dynamic'
+import { useEffect, useState } from 'react';
+
+/* const Odometer = dynamic(import('react-odometerjs'), {
+    ssr: false,
+    loading: number => <div className={s.loading}>{0}</div>,
+}); */
 
 export default function History() {
+    /* const [odometerValue, setOdometerValue] = useState(0);
+
+    useEffect(() => {
+        setTimeout(() => {
+        setOdometerValue(30);
+        }, 1000);
+    }, []); */
+
     return (
         <div className={s.history}>
             <div className={s.banner}>
@@ -27,7 +42,9 @@ export default function History() {
                 <div className={s.stats}>
                     <div className={s.stat}>
                         <div className={s.num}>
-                            30+
+                            {/* <Odometer value={odometerValue}
+                                format="(,ddd)"
+                                theme="default"/> */}30+
                         </div>
                         <div className={s.value}>
                             Satisfied Clients
@@ -35,7 +52,9 @@ export default function History() {
                     </div>
                     <div className={s.stat}>
                         <div className={s.num}>
-                            30+
+                            {/* <Odometer value={odometerValue}
+                                format="(,ddd)"
+                                theme="default"/> */}30+
                         </div>
                         <div className={s.value}>
                             Completed Projects
@@ -49,8 +68,8 @@ export default function History() {
                             Linkedin Followers
                         </div>
                     </div>
-                                </div>
                 </div>
+            </div>
         </div>
     )
 }

@@ -1,0 +1,37 @@
+.press {
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-top: 80px;
+}
+.press .title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.press .paper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  /* justify-content: space-between; */
+}
+.press .paper .release {
+  max-width: 31%;
+}
+.press .paper .release .title {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+.press .paper .release .date {
+  font-size: 16px;
+}
+.press .paper .release img {
+  width: 100%;
+  height: 200px;
+}
+.press .paper .release .preview {
+  margin-top: 10px;
+}/*# sourceMappingURL=press.module.css.map */

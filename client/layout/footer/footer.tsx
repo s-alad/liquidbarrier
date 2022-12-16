@@ -41,10 +41,10 @@ export default function Footer() {
                 </div>
                 <div className={s.copyright}>
                     <div className={s.socials}>
-                        <a href="https://www.facebook.com/liquidbarrier/"><i className={"fa fa-facebook "+s.social}></i></a>
-                        <a href="https://www.twitter.com"><i  className={"fa fa-twitter "+s.social}></i></a>
-                        <a href="https://www.instagram.com/liquidbarrier/"><i  className={"fa fa-instagram "+s.social}></i></a>
-                        <a href="https://www.linkedin.com/company/liquidbarrier"><i className={"fa fa-linkedin "+s.social}></i></a>
+                        <a href="https://www.facebook.com/liquidbarrier/"><i aria-hidden className={"fa fa-facebook "+s.social}></i></a>
+                        <a href="https://www.twitter.com"><i aria-hidden className={"fa fa-twitter "+s.social}></i></a>
+                        <a href="https://www.instagram.com/liquidbarrier/"><i aria-hidden className={"fa fa-instagram "+s.social}></i></a>
+                        <a href="https://www.linkedin.com/company/liquidbarrier"><i aria-hidden className={"fa fa-linkedin "+s.social}></i></a>
                     </div>
                     <div className={s.rights}>copyright © 2021</div>
                 </div>

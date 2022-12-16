@@ -27,27 +27,27 @@ export default function Contact() {
                 </div>
                 <div className={s.follow}>
                     <div className={s.title}>Follow Us</div>
-                    <div className={s.line}><i className={"fa fa-fax "}></i> Address : Irvington, NJ</div>
+                    <div className={s.line}><i aria-hidden className={"fa fa-fax "}></i> Address : Irvington, NJ</div>
                     <div className={s.seperator}></div>
-                    <div className={s.line}><i className={"fa fa-envelope-o"}></i> Email: writing@liquidbarriersolutions.com</div>
+                    <div className={s.line}><i aria-hidden className={"fa fa-envelope-o"}></i> Email: writing@liquidbarriersolutions.com</div>
                     <div className={s.seperator}></div>
-                    <div className={s.line}><i className={"fa fa-phone"}></i> Phone: 201-303-5541</div>
+                    <div className={s.line}><i aria-hidden className={"fa fa-phone"}></i> Phone: 201-303-5541</div>
                     <div className={s.seperator}></div>
                     <div className={s.socials}>
                         <div className={s.line}>
-                            <a href="https://www.facebook.com/liquidbarrier/"><i className={"fa fa-facebook "+s.social}></i></a>
+                            <a href="https://www.facebook.com/liquidbarrier/"><i aria-hidden className={"fa fa-facebook "+s.social}></i></a>
                             Facebook: liquidbarrier
                         </div>
                         <div className={s.line}>
-                            <a href="https://www.twitter.com"><i  className={"fa fa-twitter "+s.social}></i></a>
+                            <a href="https://www.twitter.com"><i aria-hidden className={"fa fa-twitter "+s.social}></i></a>
                             Twitter: @liquidbarrier
                         </div>
                         <div className={s.line}>
-                            <a href="https://www.instagram.com/liquidbarrier/"><i  className={"fa fa-instagram "+s.social}></i></a>
+                            <a href="https://www.instagram.com/liquidbarrier/"><i aria-hidden className={"fa fa-instagram "+s.social}></i></a>
                             Instagram: @liquidbarrier
                         </div>
                         <div className={s.line}>
-                            <a href="https://www.linkedin.com/company/liquidbarrier"><i className={"fa fa-linkedin "+s.social}></i></a>
+                            <a href="https://www.linkedin.com/company/liquidbarrier"><i aria-hidden className={"fa fa-linkedin "+s.social}></i></a>
                             Linkedin: liquidbarrier
                         </div>
                     </div>
