@@ -1,0 +1,29 @@
+.about {
+    .banner {
+        background-image: url("https://www.nyc.gov/html/dot/images/infrastructure/manhattan-bridge.jpg");
+        background-size: cover;
+        background-position-y: 30%;
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 100%;
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 60px;
+        font-size: 40px;
+        line-height: 1;
+        font-weight: 700;
+    }
+    .brief {
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 40px;
+        .title {
+            font-size: 36px;
+            color: #dc3545;
+            font-weight: 700;
+        }
+        .bio {
+
+        }
+    }
+}
