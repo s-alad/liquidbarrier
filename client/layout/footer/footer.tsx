@@ -27,9 +27,9 @@ export default function Footer() {
                     </div>
                     <div className={s.column}>
                         <div className={s.top}>Insights & Ideas</div>
-                        <div className={s.item}>Writing Samples</div>
-                        <div className={s.item}>Case Studies</div>
-                        <div className={s.item}>Press / Media</div>
+                        <Link href={'/writing-samples'}><div className={s.item}>Writing Samples</div></Link>
+                        {/* <div className={s.item}>Case Studies</div>
+                        <div className={s.item}>Press / Media</div> */}
 
                     </div>
                     <div className={s.column}>
