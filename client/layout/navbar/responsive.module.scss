@@ -7,18 +7,18 @@
 
 @media only screen and (max-width: 1020px) {
     .standardnavbar {
-        display: none;
+        display: none !important;
     }
     .mobilenavbar {
-        display: flex;
+        display: flex !important;
     }
 }
 
 @media only screen and (min-width: 1020px) {
     .standardnavbar {
-        display: flex;
+        display: flex !important;
     }
     .mobilenavbar {
-        display: none;
+        display: none !important;
     }
 }
