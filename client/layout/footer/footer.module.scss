@@ -60,6 +60,10 @@
             flex-direction: row;
             .social {
                 font-size: 24px; color: white; margin-right: 10px; margin-left: 10px;
+                transition: .2s ease-in-out;
+                &:hover {
+                    color: c.$secondary;
+                }
             }
         }
         .rights {

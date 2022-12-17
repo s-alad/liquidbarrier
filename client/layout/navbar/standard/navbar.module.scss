@@ -79,6 +79,10 @@
     }
     .social {
         font-size: 24px; color: black !important; margin-right: 10px; margin-left: 10px;
+        transition: .2s ease-in-out;
+        &:hover {
+            color: c.$secondary !important;
+        }
     }
 
 }

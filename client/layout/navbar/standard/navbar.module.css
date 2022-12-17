@@ -91,4 +91,8 @@
   color: black !important;
   margin-right: 10px;
   margin-left: 10px;
+  transition: 0.2s ease-in-out;
+}
+.navbar .social:hover {
+  color: #007bff !important;
 }/*# sourceMappingURL=navbar.module.css.map */

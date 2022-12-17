@@ -76,6 +76,10 @@
   color: white;
   margin-right: 10px;
   margin-left: 10px;
+  transition: 0.2s ease-in-out;
+}
+.footer .copyright .socials .social:hover {
+  color: #007bff;
 }
 .footer .copyright .rights {
   margin-top: 12px;
