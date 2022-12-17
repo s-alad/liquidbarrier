@@ -15,8 +15,10 @@ export default function Navbar() {
         let social = document.querySelector(`.${m.socials}`) as HTMLElement
         let items = document.querySelectorAll(`.${m.item}`) as NodeListOf<HTMLElement>
         let overlay = document.querySelector(`.${m.overlay}`) as HTMLElement
+        let menu = document.querySelector(`.${m.menu}`) as HTMLElement
 
         if (overlay.classList.contains(`${m.opened}`)) {
+            menu.classList.remove(`${m.menuopen}`)
             items.forEach((item) => {
                 item.style.display = 'none'
             })
@@ -25,6 +27,7 @@ export default function Navbar() {
             overlay.classList.remove(`${m.opened}`)
         } else {
             overlay.classList.add(`${m.opened}`)
+            menu.classList.add(`${m.menuopen}`)
             setTimeout(() => {
                 social.style.display = 'flex'
                 seperator.style.display = 'block'
@@ -53,16 +56,16 @@ export default function Navbar() {
                     <div className={m.line}></div>
                 </div>
                 <div className={m.overlay}>
-                    <div className={m.item}><Link href={'/about-us'}>About</Link></div>
-                    <div className={m.item}><Link href={'/company-history'}>Company History</Link></div>
-                    <div className={m.item}><Link href={'/diversity-inclusion'}>Diversity & Inclusion</Link></div>
-                    <div className={m.item}><Link href={'/our-services'}>Services</Link></div>
-                    <div className={m.item}><Link href={'/team'}>Our Team</Link></div>
-                    <div className={m.item}><Link href={'/voices-of-africa'}>Voices of Africa</Link></div>
-                    <div className={m.item}><Link href={'/writing-samples'}>Writing Samples</Link></div>
-                    <div className={m.item}><Link href={'/contact'}>Contact</Link></div>
-                    <div className={m.seperator}></div>
-                    <div className={m.socials}>
+                    <div onClick={() => menu()} className={m.item}><Link href={'/about-us'}>About</Link></div>
+                    <div onClick={() => menu()} className={m.item}><Link href={'/company-history'}>Company History</Link></div>
+                    <div onClick={() => menu()} className={m.item}><Link href={'/diversity-inclusion'}>Diversity & Inclusion</Link></div>
+                    <div onClick={() => menu()} className={m.item}><Link href={'/our-services'}>Services</Link></div>
+                    <div onClick={() => menu()} className={m.item}><Link href={'/team'}>Our Team</Link></div>
+                    <div onClick={() => menu()} className={m.item}><Link href={'/voices-of-africa'}>Voices of Africa</Link></div>
+                    <div onClick={() => menu()} className={m.item}><Link href={'/writing-samples'}>Writing Samples</Link></div>
+                    <div onClick={() => menu()} className={m.item}><Link href={'/contact'}>Contact</Link></div>
+                    <div onClick={() => menu()} className={m.seperator}></div>
+                    <div onClick={() => menu()} className={m.socials}>
                         <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faFacebookF} className={s.social} /></Link>
                         <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faTwitter} className={s.social} /></Link>
                         <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faInstagram} className={s.social} /></Link>

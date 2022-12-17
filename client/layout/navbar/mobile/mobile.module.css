@@ -35,6 +35,7 @@
   cursor: pointer;
 }
 .mobile .menu .line {
+  position: relative;
   width: 100%;
   height: 3px;
   background-color: #15141A;
@@ -48,6 +49,23 @@
 }
 .mobile .menu:hover .line:last-child {
   width: 80%;
+}
+.mobile .menuopen .line {
+  background-color: #007bff;
+}
+.mobile .menuopen .line:first-child {
+  width: 100%;
+  transform: rotate(45deg);
+  top: 10px;
+}
+.mobile .menuopen .line:nth-child(2) {
+  width: 0%;
+  display: none;
+}
+.mobile .menuopen .line:last-child {
+  width: 100%;
+  transform: rotate(-45deg);
+  top: -10px;
 }
 .mobile .overlay {
   display: flex;
@@ -98,6 +116,7 @@
 }
 .mobile .overlay .socials {
   font-size: 26px;
+  margin-bottom: 20px;
 }
 .mobile .overlay .socials a {
   margin-right: 26px;
@@ -105,4 +124,5 @@
 .mobile .opened {
   height: 100%;
   visibility: visible;
+  overflow-y: scroll;
 }/*# sourceMappingURL=mobile.module.css.map */
