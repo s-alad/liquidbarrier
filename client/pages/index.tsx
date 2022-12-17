@@ -13,6 +13,7 @@ export default function Home() {
 					<div className={s.title}>
 						Who We Are
 					</div>
+					<div className='flexspace'></div>
 					<div className={s.splash}>
 						<Image
 							src={'https://www.liquidbarriersolutions.com/img/who-we-are.jpg'} 
@@ -22,13 +23,14 @@ export default function Home() {
 						</Image>
 					</div>
 					<p className={s.brief}>
-						We are a dynamic, analytical, and artistic team of writers who recognize the impacts of recent world events…
+						We are a dynamic, analytical, and artistic team of writers who recognize the impacts of recent world events
 					</p>
 				</div>
 				<div className={s.highlight}>
 					<div className={s.title}>
 						Diversity
 					</div>
+					<div className='flexspace'></div>
 					<div className={s.splash}>
 						<Image
 							src={'https://www.liquidbarriersolutions.com/img/diversity-inclusion.jpg'} 
@@ -38,13 +40,14 @@ export default function Home() {
 						</Image>
 					</div>
 					<p className={s.brief}>
-						Liquid Barrier firmly supports workforce diversity and inclusion and social and cultural respect for….
+						Liquid Barrier firmly supports workforce diversity and inclusion and social and cultural respect for.
 					</p>
 				</div>
 				<div className={s.highlight}>
 					<div className={s.title}>
 						Writing Samples
 					</div>
+					<div className='flexspace'></div>
 					<div className={s.splash}>
 						<Image
 							src={'https://www.liquidbarriersolutions.com/img/writting-samples.jpg'} 
@@ -54,7 +57,7 @@ export default function Home() {
 						</Image>
 					</div>
 					<p className={s.brief}>
-						Liquid Barrier Writing Samples, Case Studies, and Press / Media representing our technology, business, and social media content work….
+						Liquid Barrier Writing Samples, Case Studies, and Press / Media representing our technology, business, and social media content work.
 					</p>
 				</div>
 			</div>

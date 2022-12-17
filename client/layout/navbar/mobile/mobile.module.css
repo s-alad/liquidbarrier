@@ -1,0 +1,108 @@
+.mobile {
+  height: 80px;
+  width: 100%;
+  background-color: #f8f9fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.mobile .logo {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-right: 30px;
+  height: 100%;
+}
+.mobile .logo img {
+  width: 65px;
+  height: 100%;
+}
+.mobile .menu {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.mobile .menu .line {
+  width: 100%;
+  height: 3px;
+  background-color: #15141A;
+  transition: all 0.3s ease;
+}
+.mobile .menu:hover .line {
+  background-color: #007bff;
+}
+.mobile .menu:hover .line:first-child {
+  width: 80%;
+}
+.mobile .menu:hover .line:last-child {
+  width: 80%;
+}
+.mobile .overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 0%;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #272727;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
+  visibility: hidden;
+}
+.mobile .overlay .seperator {
+  width: 200px;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.mobile .overlay .item {
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Sarabun", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+  border-bottom: 2px solid transparent;
+}
+.mobile .overlay .item:first-child {
+  margin-top: 30px;
+}
+.mobile .overlay .item:hover {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+.mobile .overlay .socials {
+  font-size: 26px;
+}
+.mobile .overlay .socials a {
+  margin-right: 26px;
+}
+.mobile .opened {
+  height: 100%;
+  visibility: visible;
+}/*# sourceMappingURL=mobile.module.css.map */

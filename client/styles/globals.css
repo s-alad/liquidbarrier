@@ -8,7 +8,17 @@ body {
 :root {
   --default-padding: 160px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  :root {
+      --default-padding: 120px !important;
+  }
+}
+@media screen and (max-width: 1120px) {
+  :root {
+      --default-padding: 100px !important;
+  }
+}
+@media screen and (max-width: 1080px) {
   :root {
       --default-padding: 80px !important;
   }
@@ -42,3 +52,11 @@ a {
 .flexspace {
   flex: 1;
 }
+
+
+
+
+
+
+
+

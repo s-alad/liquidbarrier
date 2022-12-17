@@ -12,6 +12,10 @@
         font-weight: 700;
     }
     .content {
+        @media screen and (max-width: 1050px) {
+            flex-direction: column;
+            .highlight {width: 100% !important; margin-bottom: 30px; .brief {height: initial !important;}}
+        }
         @include c.default;
         padding-top: 40px;
         width: 100%;
@@ -30,7 +34,7 @@
                 font-weight: 700;
             }
             .brief {
-
+                height: 100px;
             }
             .splash {
                 margin-top: 20px;

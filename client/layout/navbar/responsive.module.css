@@ -1,0 +1,24 @@
+.standardnavbar {
+  display: flex;
+}
+
+.mobilenavbar {
+  display: none;
+}
+
+@media only screen and (max-width: 1020px) {
+  .standardnavbar {
+    display: none;
+  }
+  .mobilenavbar {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .standardnavbar {
+    display: flex;
+  }
+  .mobilenavbar {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive.module.css.map */

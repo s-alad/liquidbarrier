@@ -18,6 +18,14 @@
         justify-content: space-between;
         width: 100%;
 
+        @media screen and (max-width: 600px) {
+            flex-wrap: wrap;
+            .column {width: 50% !important; margin-bottom: 20px; align-items: center; text-align: center;}
+        }
+        @media screen and (max-width: 470px) {
+            .column {width: 100% !important; .top {height: initial !important; margin-bottom: 10px;}}
+        }
+
         .column {
             width: 20%;
             display: flex;
@@ -37,7 +45,7 @@
                 color: #fff;
                 font-size: 16px;
                 font-weight: 400;
-                margin-bottom: 2px;
+                margin-bottom: 4px;
                 cursor: pointer;
             }
         }

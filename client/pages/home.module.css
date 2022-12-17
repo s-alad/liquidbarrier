@@ -19,6 +19,18 @@
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 1050px) {
+  .home .content {
+    flex-direction: column;
+  }
+  .home .content .highlight {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .home .content .highlight .brief {
+    height: initial !important;
+  }
+}
 .home .content .highlight {
   border: 2px solid white;
   padding: 30px;
@@ -30,6 +42,9 @@
   font-size: 36px;
   color: #dc3545;
   font-weight: 700;
+}
+.home .content .highlight .brief {
+  height: 100px;
 }
 .home .content .highlight .splash {
   margin-top: 20px;
