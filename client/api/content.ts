@@ -46,5 +46,11 @@ function getCreative(slug: string) {
     }).then((response: { items: any; }) => response.items)
 }
 
+function getAllMembers() {
+    return client.getEntries({
+        content_type: 'member'
+    }).then((response: { items: any; }) => response.items)
+}
 
-export {getArticle, getAllArticles, getPress, getAllPress, getCreative, getAllCreatives}
+
+export {getArticle, getAllArticles, getPress, getAllPress, getCreative, getAllCreatives, getAllMembers}
