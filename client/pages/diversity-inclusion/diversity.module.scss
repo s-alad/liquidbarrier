@@ -23,6 +23,13 @@
         }
     }
     .pieces {
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            .piece {
+                width: 100% !important;
+                margin-bottom: 30px;
+            }
+        }
         display: flex;
         flex-direction: row;
         padding-left: 160px;
@@ -31,7 +38,7 @@
         justify-content: space-between;
         .piece {
             width: 31%;
-            min-width: 300px;
+            /* min-width: 300px; */
             height: 200px;
             overflow: hidden;
             transition: .3s ease-in-out;

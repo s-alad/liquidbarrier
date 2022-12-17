@@ -29,9 +29,18 @@
   padding-top: 40px;
   justify-content: space-between;
 }
+@media screen and (max-width: 1000px) {
+  .diversity .pieces {
+    flex-direction: column;
+  }
+  .diversity .pieces .piece {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+}
 .diversity .pieces .piece {
   width: 31%;
-  min-width: 300px;
+  /* min-width: 300px; */
   height: 200px;
   overflow: hidden;
   transition: 0.3s ease-in-out;

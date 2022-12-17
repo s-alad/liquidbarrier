@@ -30,6 +30,7 @@ export default function Navbar() {
                 
                 <Link href={'/our-services'}><div className={s.item}>Services</div></Link>
                 <Link href={'/team'}><div className={s.item}>Our Team</div></Link>
+                <Link href={'/voices-of-africa'}><div className={s.item}>Voices of Africa</div></Link>
                 
                 {/* <div className={s.item}>
                     <Link href={'/insights'}>Insights & Ideas</Link>

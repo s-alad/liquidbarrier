@@ -27,6 +27,7 @@
             color: #fff;
         }
     }
+    
     .content {
         padding-left: 160px;
         padding-right: 160px;
@@ -35,10 +36,17 @@
         display: grid;
         gap: 60px;
         grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
+        }
+        @media screen and (max-width: 600px) {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+        }
+            
         .service {
             border: 2px solid white;
             padding: 30px;
-            height: 320px;
+            /* height: 320px; */
             /* width: 25%; */
             /* margin-bottom: 40px; */
             .title {
