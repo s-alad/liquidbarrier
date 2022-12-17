@@ -1,19 +1,18 @@
+@use '../styles/common.scss' as c;
 .home {
     .banner {
+        @include c.default;
         background-image: url("https://www.liquidbarriersolutions.com/assets/img/slider/write2.jpg");
         background-size: cover;
         height: 300px;
         width: 100%;
-        padding-left: 160px;
-        padding-right: 160px;
         padding-top: 60px;
         font-size: 40px;
         line-height: 1;
         font-weight: 700;
     }
     .content {
-        padding-left: 160px;
-        padding-right: 160px;
+        @include c.default;
         padding-top: 40px;
         width: 100%;
         display: flex;
@@ -27,7 +26,7 @@
             width: 32%;
             .title {
                 font-size: 36px;
-                color: #dc3545;
+                color: c.$primary;
                 font-weight: 700;
             }
             .brief {

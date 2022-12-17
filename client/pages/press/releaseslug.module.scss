@@ -1,11 +1,11 @@
+@use '../../styles/common.scss' as c;
 .release {
-    padding-left: 160px;
-    padding-right: 160px;
+    @include c.default;
     padding-top: 40px;
 
     a {
         text-decoration: none;
-        color: #007bff;;
+        color: c.$secondary;
     }
 
     .title {

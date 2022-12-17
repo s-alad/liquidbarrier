@@ -1,3 +1,4 @@
+@use '../../styles/common.scss' as c;
 .navbar {
     height: 80px;
     width: 100%;
@@ -7,8 +8,7 @@
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 160px;
-    padding-right: 160px;
+    @include c.default;
     position: sticky;
     top: 0;
     z-index: 99;
@@ -41,8 +41,8 @@
             transition: all .3s ease !important;
             border-bottom: 2px solid transparent;
             &:hover {
-                color: #0172d0;
-                border-bottom: 2px solid #0172d0;
+                color: c.$secondary;
+                border-bottom: 2px solid c.$secondary;
             }
         }
         .dropdown {
@@ -62,7 +62,7 @@
                     font-weight: 400;
                     border-bottom: 1px solid black;
                     &:hover {
-                        color: #0172d0;
+                        color: c.$secondary;
                     }
                 }
             }

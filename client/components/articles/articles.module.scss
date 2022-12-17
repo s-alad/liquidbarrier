@@ -1,7 +1,6 @@
+@use '../../styles/common.scss' as c;
 .articles {
-    padding-left: 160px;
-    padding-right: 160px;
-
+    @include c.default;
     .title {
         font-size: 30px;
         color: #fff;

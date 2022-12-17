@@ -1,22 +1,21 @@
+@use '../../styles/common.scss' as c;
 .writing {
     .banner {
         background-image: url("https://www.liquidbarriersolutions.com/img/writting-samples-banner.jpg");
         background-size: cover;
         height: 300px;
         width: 100%;
-        padding-left: 160px;
-        padding-right: 160px;
+        @include c.default;
         padding-top: 60px;
         font-size: 40px;
         line-height: 1;
         font-weight: 700;
     }
     .title {
-        padding-left: 160px;
-        padding-right: 160px;
+        @include c.default;
         padding-top: 40px;
         padding-bottom: 40px;
-        color: #dc3545;
+        color: c.$primary;
         font-size: 36px;
         font-family: "Sarabun", sans-serif;
         font-weight: 600;

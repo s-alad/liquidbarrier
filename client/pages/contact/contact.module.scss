@@ -1,9 +1,9 @@
+@use '../../styles/common.scss' as c;
 .contact {
     width: 100%;
     .map {
         width: 100%;
-        padding-left: 160px;
-        padding-right: 160px;
+        @include c.default;
         padding-top: 60px;
         iframe {
             width: 100%;
@@ -12,23 +12,21 @@
         }
     }
     .comment {
-        padding-left: 160px;
-        padding-right: 160px;
+        @include c.default;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 40px;
     }
     .contactus {
         width: 100%;
-        padding-left: 160px;
-        padding-right: 160px;
+        @include c.default;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
         @mixin title {
             font-size: 36px;
-            color: #dc3545;
+            color: c.$primary;
             font-weight: 700;
             margin-bottom: 40px;
         }
@@ -44,7 +42,7 @@
             cursor: pointer;
             transition: .2s ease-in-out;
             &:hover {
-                color: #0172d0;
+                color: c.$secondary;
             }
         }
         .us {

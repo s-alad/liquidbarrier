@@ -1,6 +1,6 @@
 .articles {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
 }
 .articles .title {
   font-size: 30px;

@@ -1,3 +1,4 @@
+@use '../../styles/common.scss' as c;
 .person {
     display: flex;
     flex-direction: column;
@@ -37,7 +38,7 @@
                 }
             }
             .title {
-                color: #dc3545;
+                color: c.$primary;
                 font-size: 28px;
                 font-family: "Sarabun", sans-serif;
                 font-weight: 600;

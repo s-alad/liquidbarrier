@@ -3,8 +3,8 @@
   background-size: cover;
   height: 300px;
   width: 100%;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
   padding-top: 60px;
   font-size: 40px;
   line-height: 1;
@@ -12,8 +12,8 @@
 }
 .services .info {
   padding-top: 40px;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
   padding-bottom: 40px;
 }
 .services .info .title {
@@ -27,8 +27,8 @@
   color: #fff;
 }
 .services .content {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
   width: 100%;
   margin: 0 auto;
   display: grid;
@@ -48,9 +48,6 @@
 .services .content .service {
   border: 2px solid white;
   padding: 30px;
-  /* height: 320px; */
-  /* width: 25%; */
-  /* margin-bottom: 40px; */
 }
 .services .content .service .title {
   margin-bottom: 10px;

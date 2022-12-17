@@ -1,0 +1,7 @@
+@mixin default {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+}
+
+$primary: #dc3545;
+$secondary: #007bff;

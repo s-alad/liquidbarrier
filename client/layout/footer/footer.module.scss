@@ -1,16 +1,16 @@
+@use '../../styles/common.scss' as c;
 .footer {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 160px;
-    padding-right: 160px;
+    @include c.default;
     .seperator {
         margin-top: 100px;
         margin-bottom: 40px;
         width: 100%;
         height: 1px;
-        background-color:#dc3545;
+        background-color:c.$primary;
     }
     .information {
         display: flex;
@@ -25,7 +25,7 @@
             .top {
                 //~22px tall
                 height: 60px;
-                color: #dc3545;
+                color:c.$primary;
                 font-size: 18px;
                 font-weight: 700;
                 img {

@@ -1,3 +1,4 @@
+@use '../../styles/common.scss' as c;
 .about {
     .banner {
         background-image: url("https://www.nyc.gov/html/dot/images/infrastructure/manhattan-bridge.jpg");
@@ -6,20 +7,18 @@
         background-repeat: no-repeat;
         height: 300px;
         width: 100%;
-        padding-left: 160px;
-        padding-right: 160px;
+        @include c.default;
         padding-top: 60px;
         font-size: 40px;
         line-height: 1;
         font-weight: 700;
     }
     .brief {
-        padding-left: 160px;
-        padding-right: 160px;
+        @include c.default;
         padding-top: 40px;
         .title {
             font-size: 36px;
-            color: #dc3545;
+            color: c.$primary;
             font-weight: 700;
         }
         .bio {

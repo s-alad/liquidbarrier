@@ -3,8 +3,8 @@
 }
 .contact .map {
   width: 100%;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
   padding-top: 60px;
 }
 .contact .map iframe {
@@ -14,16 +14,16 @@
   z-index: -1;
 }
 .contact .comment {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
 }
 .contact .contactus {
   width: 100%;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -41,7 +41,7 @@
   transition: 0.2s ease-in-out;
 }
 .contact .contactus button:hover {
-  color: #0172d0;
+  color: #007bff;
 }
 .contact .contactus .us {
   width: 48%;

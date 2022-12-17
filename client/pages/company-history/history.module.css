@@ -3,16 +3,16 @@
   background-size: cover;
   height: 300px;
   width: 100%;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
   padding-top: 60px;
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
 }
 .history .brief {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
   padding-top: 40px;
 }
 .history .brief .title {
@@ -22,8 +22,8 @@
 }
 .history .statistics {
   padding-top: 40px;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
 }
 .history .statistics .title {
   font-size: 36px;
