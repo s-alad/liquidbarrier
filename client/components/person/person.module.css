@@ -15,6 +15,15 @@
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 768px) {
+  .person .information {
+    flex-direction: column;
+  }
+  .person .information .content {
+    margin-left: 0 !important;
+    margin-top: 20px !important;
+  }
+}
 .person .information .image {
   margin-top: 20px;
   width: 170px;
@@ -28,15 +37,16 @@
   margin-left: 34px;
 }
 .person .information .content .row {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
 }
 .person .information .content .row a {
+  display: inline-block;
   margin-right: 10px;
-  padding-top: 2px;
 }
 .person .information .content .row a svg {
+  padding-top: 4px;
   font-size: 24px;
 }
 .person .information .content .title {

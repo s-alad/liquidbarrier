@@ -32,6 +32,10 @@
             font-weight: 700;
         }
         .stats {
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                .stat {margin-bottom: 20px;}
+            }
             margin-top: 16px;
             display: flex;
             flex-direction: row;

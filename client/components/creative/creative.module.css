@@ -1,6 +1,6 @@
 .creative {
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
   padding-top: 80px;
 }
 .creative .title {

@@ -25,8 +25,8 @@ export default function Person(person: PersonProps) {
                 <div className={s.content}>
                     <h1 className={s.title}>{person.name}</h1>
                     <div className={s.row}>
-                        <Link href={person.linkedin} target={'_blank'}><FontAwesomeIcon icon={faLinkedin} /></Link>
-                        <h2 className={s.position}>{person.position}</h2>
+                        
+                        <h2 className={s.position}><Link href={person.linkedin} target={'_blank'}><FontAwesomeIcon icon={faLinkedin} /></Link>{person.position}</h2>
                     </div>
                     <p className={s.bio}>{person.bio}</p>
                 </div>

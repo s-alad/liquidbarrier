@@ -1,6 +1,7 @@
+
+@use '../../styles/common.scss' as c;
 .creative {
-    padding-left: 160px;
-    padding-right: 160px;
+    @include c.default;
     padding-top: 80px;
 
     .title {
