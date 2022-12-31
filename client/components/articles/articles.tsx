@@ -8,7 +8,7 @@ export default function Articles({articles}: any) {
     console.log(articles)
     return (
         <div className={s.articles}>
-            <div className={s.title}>Articles</div>
+            <div className={s.title}>Thought Leadership & Opinions</div>
             <div className={s.paper}>
                 {
                     articles.map((article: any) => (
