@@ -8,7 +8,7 @@ export default function Creative({creatives}: any) {
     console.log(creatives)
     return (
         <div className={s.creative}>
-            <div className={s.title}>Creative</div>
+            <div className={s.title}>Fiction & Creative Writing</div>
             <div className={s.paper}>
                 {
                     creatives.map((piece: any) => (
