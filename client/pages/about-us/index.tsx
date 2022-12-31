@@ -15,6 +15,9 @@ export default function AboutUs() {
                     <br /><br />
                     In the last year, the world has come together to recognized the differences in criminal justice; equal rights and opportunity; and that our climate and environment is changing. Whether we’re writing a proposal a for a performing arts organization to seek additional funding or composing an article on the mathematical principles an artificial intelligence company uses to model their product, how and what we write remains true to our core beliefs.
                 </p>
+                <div className={s.quotes}>
+                    
+                </div>
                 <div className={s.title}>
                     What We Do (And How We Do It)
                 </div>
