@@ -16,12 +16,12 @@ export default function Person(person: PersonProps) {
         <div className={s.person}>
             <div className={s.bar}></div>
             <div className={s.information}>
-                <Image src={'https://www.liquidbarriersolutions.com/img/Picture1.png'}
+                {/* <Image src={'https://www.liquidbarriersolutions.com/img/Picture1.png'}
                     alt="Picture of the author"
                     width={65}
                     height={60}
                     className={s.image} 
-                />
+                /> */}
                 <div className={s.content}>
                     <h1 className={s.title}>{person.name}</h1>
                     <div className={s.row}>
