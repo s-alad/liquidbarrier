@@ -4,9 +4,9 @@ import Image from 'next/image'
 export default function Diversity() {
     return (
         <div className={s.diversity}>
-            <div className={s.banner}>
+            {/* <div className={s.banner}>
                 Diversity & Inclusion
-            </div>
+            </div> */}
             <div className={s.brief}>
                 <div className={s.title}>
                     Our Commitment to Diversity & Inclusion & the Environment
