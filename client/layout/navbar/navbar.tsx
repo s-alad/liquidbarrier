@@ -38,6 +38,14 @@ export default function Navbar() {
         }
     }
 
+    function setActive(e: any) {
+        let target = e.target as HTMLElement
+        let active = document.querySelectorAll(`.${r.active}`) as NodeListOf<HTMLElement>
+        active.forEach((item) => {
+            item.classList.remove(`${r.active}`)
+        })
+        target.classList.add(`${r.active}`)
+    }
     return (
         <>
             <div className={`${m.mobile} ${r.mobilenavbar}`}>
@@ -86,7 +94,7 @@ export default function Navbar() {
                 <div className='flexspace'></div>
                 <div className={s.anchors}>
 
-                    <div className={s.item} >
+                    <div onClick={(e)=>setActive(e)} className={s.item} >
                         <Link href={'/about-us'}> About</Link>
                         <div className={s.dropdown}>
                             <div className={s.dropped}>
@@ -96,9 +104,9 @@ export default function Navbar() {
                         </div>
                     </div>
 
-                    <Link href={'/our-services'}><div className={s.item}>Services</div></Link>
-                    <Link href={'/team'}><div className={s.item}>Our Team</div></Link>
-                    <Link href={'/voices-of-africa'}><div className={s.item}>Voices of Africa</div></Link>
+                    <Link onClick={(e)=>setActive(e)} href={'/our-services'}><div className={s.item}>Services</div></Link>
+                    <Link onClick={(e)=>setActive(e)} href={'/team'}><div className={s.item}>Our Team</div></Link>
+                    <Link onClick={(e)=>setActive(e)} href={'/voices-of-africa'}><div className={s.item}>Voices of Africa</div></Link>
 
                     {/* <div className={s.item}>
                     <Link href={'/insights'}>Insights & Ideas</Link>
@@ -110,9 +118,8 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div> */}
-                    <Link href={'/writing-samples'}><div className={s.item}>Writing Samples</div></Link>
-
-                    <Link href={'/contact'}><div className={s.item}>Contact</div></Link>
+                    <Link onClick={(e)=>setActive(e)} href={'/writing-samples'}><div className={s.item}>Writing Samples</div></Link>
+                    <Link onClick={(e)=>setActive(e)} href={'/contact'}><div className={s.item}>Contact</div></Link>
                 </div>
                 <div className={s.pipe}></div>
                 <Link href="https://www.facebook.com/liquidbarrier/"><FontAwesomeIcon icon={faFacebookF} className={s.social} /></Link>
