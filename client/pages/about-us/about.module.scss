@@ -24,5 +24,35 @@
         .bio {
 
         }
+        .quotes {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .steve {
+                width: 55%;
+            }
+            .quotespacer {
+                flex: 1;
+            }
+            .estee {
+                width: 35%
+            }
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                .steve {
+                    width: 100%;
+                }
+                .quotespacer {
+                    flex: none;
+                    width: 100%;
+                    height: 16px;
+                }
+                .estee {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
