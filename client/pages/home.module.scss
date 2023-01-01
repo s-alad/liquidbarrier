@@ -16,22 +16,35 @@
             flex-direction: column;
             .highlight {width: 100% !important; margin-bottom: 30px; .brief {height: initial !important;}}
         }
-        @include c.default;
+       /*  @include c.default; */
         padding-top: 40px;
         width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between;align-items: stretch;
+        flex: 1;
+        .redline {
+            max-width: 1px;
+            min-width: 1px;
+            background-color: c.$primary;
+            flex: 1;
+        }
         .highlight {
-            border: 2px solid white;
-            padding: 30px;
+            /* border: 2px solid white; */
+            /* padding: 30px; */
+            padding-top: 30px;
+            padding-right: 15px;
+            padding-left: 15px;
             display: flex;
             flex-direction: column;
-            width: 32%;
+            width: 33%;
+            max-width: 33%;
             .title {
-                font-size: 36px;
+                font-size:20px;
                 color: c.$primary;
-                font-weight: 700;
+                font-weight: 600;
             }
             .brief {
                 height: 100px;

@@ -26,9 +26,10 @@ export default function Home() {
 						We are a dynamic, analytical, and artistic team of writers who recognize the impacts of recent world events
 					</p>
 				</div>
+				<div className={s.redline}></div>
 				<div className={s.highlight}>
 					<div className={s.title}>
-						Diversity
+						Diversity & Inclusion
 					</div>
 					<div className='flexspace'></div>
 					<div className={s.splash}>
@@ -42,7 +43,11 @@ export default function Home() {
 					<p className={s.brief}>
 						Liquid Barrier firmly supports workforce diversity and inclusion and social and cultural respect for.
 					</p>
+					<div className={s.action}>
+
+					</div>
 				</div>
+				<div className={s.redline}></div>
 				<div className={s.highlight}>
 					<div className={s.title}>
 						Writing Samples

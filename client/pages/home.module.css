@@ -11,13 +11,16 @@
   font-weight: 700;
 }
 .home .content {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /*  @include c.default; */
   padding-top: 40px;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: stretch;
+  flex: 1;
 }
 @media screen and (max-width: 1050px) {
   .home .content {
@@ -31,17 +34,27 @@
     height: initial !important;
   }
 }
+.home .content .redline {
+  max-width: 1px;
+  min-width: 1px;
+  background-color: #dc3545;
+  flex: 1;
+}
 .home .content .highlight {
-  border: 2px solid white;
-  padding: 30px;
+  /* border: 2px solid white; */
+  /* padding: 30px; */
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
-  width: 32%;
+  width: 33%;
+  max-width: 33%;
 }
 .home .content .highlight .title {
-  font-size: 36px;
+  font-size: 20px;
   color: #dc3545;
-  font-weight: 700;
+  font-weight: 600;
 }
 .home .content .highlight .brief {
   height: 100px;
