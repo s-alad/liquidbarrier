@@ -21,4 +21,35 @@
   font-size: 36px;
   color: #dc3545;
   font-weight: 700;
+}
+.about .brief .quotes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.about .brief .quotes .steve {
+  width: 55%;
+}
+.about .brief .quotes .quotespacer {
+  flex: 1;
+}
+.about .brief .quotes .estee {
+  width: 35%;
+}
+@media screen and (max-width: 768px) {
+  .about .brief .quotes {
+    flex-direction: column;
+  }
+  .about .brief .quotes .steve {
+    width: 100%;
+  }
+  .about .brief .quotes .quotespacer {
+    flex: none;
+    width: 100%;
+    height: 16px;
+  }
+  .about .brief .quotes .estee {
+    width: 100%;
+  }
 }/*# sourceMappingURL=about.module.css.map */

@@ -16,7 +16,17 @@ export default function AboutUs() {
                     In the last year, the world has come together to recognized the differences in criminal justice; equal rights and opportunity; and that our climate and environment is changing. Whether we’re writing a proposal a for a performing arts organization to seek additional funding or composing an article on the mathematical principles an artificial intelligence company uses to model their product, how and what we write remains true to our core beliefs.
                 </p>
                 <div className={s.quotes}>
-                    
+                    <div className={s.steve}>
+                        "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma -- which is living with the results of other people's thinking." 
+                        <br />
+                        <em>- Steve Jobs</em>
+                    </div>
+                    <div className={s.quotespacer}></div>
+                    <div className={s.estee}>
+                        "I never dreamed about success, I worked for it." 
+                        <br />
+                        <em>- Estee Lauder</em>
+                    </div>
                 </div>
                 <div className={s.title}>
                     What We Do (And How We Do It)
