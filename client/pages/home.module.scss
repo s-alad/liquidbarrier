@@ -14,7 +14,11 @@
     .content {
         @media screen and (max-width: 1050px) {
             flex-direction: column;
-            .highlight {width: 100% !important; margin-bottom: 30px; .brief {height: initial !important;}}
+            .redline {margin: auto; min-height: 1px; min-width: 70% !important; max-width: 70%; width: 70%;}
+            .highlight {
+                width: 70% !important; max-width: 70% !important; margin: 0 auto; margin-bottom: 30px; 
+                .brief {height: initial !important;}
+            }
         }
        /*  @include c.default; */
         padding-top: 40px;

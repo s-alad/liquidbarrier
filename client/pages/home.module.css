@@ -26,8 +26,17 @@
   .home .content {
     flex-direction: column;
   }
+  .home .content .redline {
+    margin: auto;
+    min-height: 1px;
+    min-width: 70% !important;
+    max-width: 70%;
+    width: 70%;
+  }
   .home .content .highlight {
-    width: 100% !important;
+    width: 70% !important;
+    max-width: 70% !important;
+    margin: 0 auto;
     margin-bottom: 30px;
   }
   .home .content .highlight .brief {
