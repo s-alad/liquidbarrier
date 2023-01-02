@@ -1,6 +1,5 @@
 .home .banner {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
   background-image: url("https://www.liquidbarriersolutions.com/assets/img/slider/write2.jpg");
   background-size: cover;
   height: 300px;
@@ -9,6 +8,18 @@
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
+}
+.home .banner .bannertext {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .home .banner .bannertext {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .home .content {
   /*  @include c.default; */
@@ -27,20 +38,36 @@
     flex-direction: column;
   }
   .home .content .redline {
-    margin: auto;
+    margin: auto 0;
     min-height: 1px;
-    min-width: 70% !important;
-    max-width: 70%;
-    width: 70%;
+    min-width: 80% !important;
+    max-width: 80%;
+    width: 80%;
   }
   .home .content .highlight {
-    width: 70% !important;
-    max-width: 70% !important;
-    margin: 0 auto;
+    width: 80% !important;
+    max-width: 80% !important;
+    margin: 0 0;
     margin-bottom: 30px;
   }
   .home .content .highlight .brief {
     height: initial !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .home .content .highlight {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .home .content {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
   }
 }
 .home .content .redline {

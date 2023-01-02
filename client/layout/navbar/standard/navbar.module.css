@@ -17,12 +17,14 @@
   /* @include c.default; */
   padding-right: 15px;
   padding-left: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 99;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   .navbar {
     padding-left: var(--default-padding);
     padding-right: var(--default-padding);

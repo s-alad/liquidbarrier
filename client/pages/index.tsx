@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<div className={s.home}>
 			<div className={s.banner}>
-				Liquid Barrier
+				<div className={s.bannertext}>Liquid Barrier</div>
 			</div>
 			<div className={s.content}>
 				<div className={s.highlight}>

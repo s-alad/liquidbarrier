@@ -12,9 +12,18 @@
   font-weight: 700;
 }
 .diversity .brief {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 40px;
+}
+@media screen and (max-width: 1250px) {
+  .diversity .brief {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .diversity .brief .title {
   font-size: 36px;
@@ -24,8 +33,9 @@
 .diversity .pieces {
   display: flex;
   flex-direction: row;
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 40px;
   justify-content: space-between;
 }
@@ -36,6 +46,14 @@
   .diversity .pieces .piece {
     width: 100% !important;
     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .diversity .pieces {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
   }
 }
 .diversity .pieces .grey {
@@ -59,9 +77,18 @@
   scale: 1.1;
 }
 .diversity .colortoggle {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 10px;
+}
+@media screen and (max-width: 1250px) {
+  .diversity .colortoggle {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .diversity .colortoggle .toggle {
   width: 100px;

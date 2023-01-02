@@ -14,7 +14,8 @@
         font-weight: 700;
     }
     .brief {
-        @include c.default;
+        /* @include c.default; */
+        @include c.minimal;
         padding-top: 40px;
         .title {
             font-size: 36px;
@@ -32,7 +33,8 @@
         }
         display: flex;
         flex-direction: row;
-        @include c.default;
+        /* @include c.default; */
+        @include c.minimal;
         padding-top: 40px;
         justify-content: space-between;
         .grey {
@@ -59,7 +61,8 @@
         }
     }
     .colortoggle {
-        @include c.default;
+        /* @include c.default; */
+        @include c.minimal;
         padding-top: 10px;
 
         .toggle {

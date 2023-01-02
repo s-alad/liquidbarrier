@@ -1,7 +1,7 @@
 @use '../styles/common.scss' as c;
 .home {
     .banner {
-        @include c.default;
+        /* @include c.default; */
         background-image: url("https://www.liquidbarriersolutions.com/assets/img/slider/write2.jpg");
         background-size: cover;
         height: 300px;
@@ -10,21 +10,24 @@
         font-size: 40px;
         line-height: 1;
         font-weight: 700;
+        .bannertext {@include c.minimal;}
     }
     .content {
         @media screen and (max-width: 1050px) {
             flex-direction: column;
-            .redline {margin: auto; min-height: 1px; min-width: 70% !important; max-width: 70%; width: 70%;}
+            .redline {margin: auto 0; min-height: 1px; min-width: 80% !important; max-width: 80%; width: 80%;}
             .highlight {
-                width: 70% !important; max-width: 70% !important; margin: 0 auto; margin-bottom: 30px; 
+                width: 80% !important; max-width: 80% !important; margin: 0 0; margin-bottom: 30px; 
                 .brief {height: initial !important;}
             }
+        }
+        @media screen and (max-width: 650px) {
+            .highlight { width: 100% !important; max-width: 100% !important; margin: 0 0; margin-bottom: 30px; }
         }
        /*  @include c.default; */
         padding-top: 40px;
         width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
+        @include c.minimal;
         display: flex;
         flex-direction: row;
         justify-content: space-between;align-items: stretch;

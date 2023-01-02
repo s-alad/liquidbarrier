@@ -16,7 +16,7 @@ export default function Team({members}: any) {
     return (
         <div className={s.team}>
             <div className={s.banner}>
-                Our Team
+                <div className={s.bannertext}>Our Team</div>
             </div>
             <div className={s.about}>
                 <div className={s.title}>

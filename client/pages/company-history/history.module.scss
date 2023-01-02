@@ -5,7 +5,7 @@
         background-size: cover;
         height: 300px;
         width: 100%;
-        @include c.default;
+        /* @include c.default; */
         padding-top: 60px;
         font-size: 40px;
         line-height: 1;
@@ -17,9 +17,11 @@
             font-size: 18px;
             font-weight: 600 !important;
         }
+        .bannertext {@include c.minimal;}
     }
     .brief {
-        @include c.default;
+        /* @include c.default; */
+        @include c.minimal;
         padding-top: 40px;
         .title {
             font-size: 36px;
@@ -32,7 +34,8 @@
     }
     .statistics {
         padding-top: 40px;
-        @include c.default;
+        /* @include c.default; */
+        @include c.minimal;
         .title {
             font-size: 36px;
             color: c.$primary;

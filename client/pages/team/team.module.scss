@@ -5,14 +5,16 @@
         background-size: cover;
         height: 300px;
         width: 100%;
-        @include c.default;
+        /* @include c.default; */
         padding-top: 60px;
         font-size: 40px;
         line-height: 1;
         font-weight: 700;
+        .bannertext {@include c.minimal;}
     }
     .about {
-        @include c.default;
+        /* @include c.default; */
+        @include c.minimal;
         padding-top: 40px;
         .title {
             color: c.$primary;
@@ -22,7 +24,8 @@
         .content {}
     }
     .people {
-        margin-top: 40px;
-        @include c.default;
+        margin-top: 40px !important;
+        /* @include c.default; */
+        @include c.minimal;
     }
 }

@@ -3,8 +3,7 @@
   background-size: cover;
   height: 300px;
   width: 100%;
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
   padding-top: 60px;
   font-size: 40px;
   line-height: 1;
@@ -18,10 +17,31 @@
   font-size: 18px;
   font-weight: 600 !important;
 }
+.history .banner .bannertext {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .history .banner .bannertext {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
+}
 .history .brief {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 40px;
+}
+@media screen and (max-width: 1250px) {
+  .history .brief {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .history .brief .title {
   font-size: 36px;
@@ -30,8 +50,17 @@
 }
 .history .statistics {
   padding-top: 40px;
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .history .statistics {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .history .statistics .title {
   font-size: 36px;

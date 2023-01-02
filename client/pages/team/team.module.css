@@ -3,17 +3,37 @@
   background-size: cover;
   height: 300px;
   width: 100%;
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
   padding-top: 60px;
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
 }
+.team .banner .bannertext {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .team .banner .bannertext {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
+}
 .team .about {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 40px;
+}
+@media screen and (max-width: 1250px) {
+  .team .about {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .team .about .title {
   color: #dc3545;
@@ -21,7 +41,16 @@
   font-weight: 600;
 }
 .team .people {
-  margin-top: 40px;
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  margin-top: 40px !important;
+  /* @include c.default; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .team .people {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }/*# sourceMappingURL=team.module.css.map */
