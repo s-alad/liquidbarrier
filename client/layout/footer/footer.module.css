@@ -3,8 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .footer {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .footer .seperator {
   margin-top: 100px;

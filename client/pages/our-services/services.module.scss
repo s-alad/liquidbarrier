@@ -6,15 +6,18 @@
         background-size: cover;
         height: 300px;
         width: 100%;
-        @include c.default;
+        /* @include c.default; */
         padding-top: 60px;
         font-size: 40px;
         line-height: 1;
         font-weight: 700;
+        .text {
+            @include c.minimal;
+        }
     }
     .info {
         padding-top: 40px;
-        @include c.default;
+        @include c.minimal;
         padding-bottom: 40px;
         .title {
             font-size: 36px;
@@ -29,7 +32,7 @@
     }
     
     .content {
-        @include c.default;
+        @include c.minimal;
         width: 100%;
         margin: 0 auto;
         display: grid;

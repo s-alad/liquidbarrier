@@ -1,7 +1,16 @@
 .article {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .article {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .article .title {
   font-size: 36px;

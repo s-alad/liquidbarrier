@@ -3,18 +3,37 @@
   background-size: cover;
   height: 300px;
   width: 100%;
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
   padding-top: 60px;
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
 }
+.services .banner .text {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .services .banner .text {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
+}
 .services .info {
   padding-top: 40px;
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  max-width: 1200px;
+  margin: 0 auto;
   padding-bottom: 40px;
+}
+@media screen and (max-width: 1250px) {
+  .services .info {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .services .info .title {
   font-size: 36px;
@@ -27,13 +46,21 @@
   color: #fff;
 }
 .services .content {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
   margin: 0 auto;
   display: grid;
   gap: 60px;
   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+}
+@media screen and (max-width: 1250px) {
+  .services .content {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 @media screen and (max-width: 1000px) {
   .services .content {

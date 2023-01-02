@@ -5,17 +5,37 @@
   background-repeat: no-repeat;
   height: 300px;
   width: 100%;
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
   padding-top: 60px;
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
 }
+.about .banner .bannertext {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .about .banner .bannertext {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
+}
 .about .brief {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  /* @include c.default; */
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 40px;
+}
+@media screen and (max-width: 1250px) {
+  .about .brief {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .about .brief .title {
   font-size: 36px;

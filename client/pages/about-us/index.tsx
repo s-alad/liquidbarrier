@@ -3,7 +3,7 @@ import s from './about.module.css'
 export default function AboutUs() {
     return (
         <div className={s.about}>
-            <div className={s.banner}>About Us</div>
+            <div className={s.banner}><div className={s.bannertext}>About Us</div></div>
             <div className={s.brief}>
                 <div className={s.title}>
                     Who We Are

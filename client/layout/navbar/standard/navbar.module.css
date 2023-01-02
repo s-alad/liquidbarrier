@@ -22,6 +22,14 @@
   top: 0;
   z-index: 99;
 }
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
+}
 .navbar .logo {
   width: -webkit-min-content;
   width: -moz-min-content;

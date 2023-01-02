@@ -4,7 +4,7 @@ export default function OurServices() {
     return (
         <div className={s.services}>
             <div className={s.banner}>
-                Our Services
+                <div className={s.text}>Our Services</div>
             </div>
             <div className={s.info}>
                 <div className={s.title}>Liquid Barrier Proudly Offers The Following Services</div>

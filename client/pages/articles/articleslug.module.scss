@@ -1,7 +1,15 @@
 @use '../../styles/common.scss' as c;
 .article {
-    @include c.default;
+    /* @include c.default; */
+    max-width: 1200px;
+    margin: 0 auto;
     padding-top: 40px;
+
+    @media screen and (max-width: 1200px) {
+        @include c.default;
+        max-width: none !important;
+        margin: none !important;
+    }
 
     .title {
         font-size: 36px;
