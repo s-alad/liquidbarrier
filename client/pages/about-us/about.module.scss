@@ -19,7 +19,7 @@
         .title {
             font-size: 36px;
             color: c.$primary;
-            font-weight: 700;
+            font-weight: 600;
         }
         .bio {
 
@@ -29,6 +29,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            margin-bottom: 16px;
             .steve {
                 width: 55%;
             }

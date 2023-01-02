@@ -18,7 +18,7 @@
 .history .brief .title {
   font-size: 36px;
   color: #dc3545;
-  font-weight: 700;
+  font-weight: 600;
 }
 .history .statistics {
   padding-top: 40px;
@@ -28,7 +28,7 @@
 .history .statistics .title {
   font-size: 36px;
   color: #dc3545;
-  font-weight: 700;
+  font-weight: 600;
 }
 .history .statistics .stats {
   margin-top: 16px;

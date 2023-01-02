@@ -20,13 +20,14 @@
 .about .brief .title {
   font-size: 36px;
   color: #dc3545;
-  font-weight: 700;
+  font-weight: 600;
 }
 .about .brief .quotes {
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 .about .brief .quotes .steve {
   width: 55%;
