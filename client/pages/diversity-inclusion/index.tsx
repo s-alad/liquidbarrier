@@ -1,7 +1,19 @@
 import s from './diversity.module.css'
 import Image from 'next/image'
+import Gobutton from '../../components/gobutton'
 
 export default function Diversity() {
+
+    function toggleColor() {
+        //get pieces with classname piece
+        let pieces = document.getElementsByClassName(s.piece)
+        //give all pieces a class called grey
+        console.log('toggling')
+        for (let i = 0; i < pieces.length; i++) {
+            pieces[i].classList.toggle(s.grey)
+        }
+    }
+
     return (
         <div className={s.diversity}>
             {/* <div className={s.banner}>
@@ -41,6 +53,11 @@ export default function Diversity() {
                         width={300}
                         height={300}>
                     </Image>
+                </div>
+            </div>
+            <div className={s.colortoggle} >
+                <div onClick={(toggleColor)}>
+                    <Gobutton text={'Color'} link={''}></Gobutton>
                 </div>
             </div>
         </div>

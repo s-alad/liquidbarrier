@@ -38,6 +38,9 @@
     margin-bottom: 30px;
   }
 }
+.diversity .pieces .grey {
+  filter: blur(5px);
+}
 .diversity .pieces .piece {
   width: 31%;
   /* min-width: 300px; */
@@ -54,4 +57,15 @@
 }
 .diversity .pieces .piece:hover img {
   scale: 1.1;
+}
+.diversity .colortoggle {
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
+  padding-top: 10px;
+}
+.diversity .colortoggle .toggle {
+  width: 100px;
+  height: 40px;
+  border: 2px solid white;
+  cursor: pointer;
 }/*# sourceMappingURL=diversity.module.css.map */

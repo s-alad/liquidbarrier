@@ -19,7 +19,8 @@ export default function History() {
     return (
         <div className={s.history}>
             <div className={s.banner}>
-                History
+                <div>History</div>
+                <div className={s.footnote}>footnote</div>
             </div>
             <div className={s.brief}>
                 <div className={s.title}>

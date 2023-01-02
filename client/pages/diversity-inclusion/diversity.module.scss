@@ -35,6 +35,9 @@
         @include c.default;
         padding-top: 40px;
         justify-content: space-between;
+        .grey {
+            filter: blur(5px);
+        }
         .piece {
             width: 31%;
             /* min-width: 300px; */
@@ -53,6 +56,17 @@
                     scale: 1.1;
                 }
             }
+        }
+    }
+    .colortoggle {
+        @include c.default;
+        padding-top: 10px;
+
+        .toggle {
+            width: 100px;
+            height: 40px;
+            border: 2px solid white;
+            cursor: pointer;
         }
     }
 }
