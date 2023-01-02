@@ -1,7 +1,11 @@
 @use '../../../styles/common.scss' as c;
+
+.navwrapper {width: 100%;background-color: #F3FAFF;}
 .navbar {
     height: 80px;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     //background-color: #f8f9fb;
     background-color: #F3FAFF;
     display: flex;
@@ -9,7 +13,9 @@
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    @include c.default;
+    /* @include c.default; */
+    padding-right: 15px;
+    padding-left: 15px;
     position: sticky;
     top: 0;
     z-index: 99;
