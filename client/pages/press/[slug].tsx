@@ -2,6 +2,7 @@ import {getPress, getAllPress } from '../../api/content'
 import { /* documentToHtmlString,  */documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import s from './releaseslug.module.css'
+import OtherSlug from '../../components/otherslug/otherslug';
 
 export async function getStaticPaths() {
 
@@ -17,16 +18,18 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}:any) {
     let data = await getPress(params.slug);
+    let extra = await getAllPress();
 
     return {
         props: {
-            release: data[0]
+            release: data[0],
+            extra: extra.filter((release:any) => release.fields.slug !== params.slug)
         },
         revalidate: 60
     }
 }
 
-export default function Press({release}:any) {
+export default function Press({release, extra}:any) {
     console.log(release)
     return (
         <div className={s.release}>
@@ -36,6 +39,7 @@ export default function Press({release}:any) {
             <div className={s.content}>
                {documentToReactComponents(release['fields']['content'])}
             </div>
+            <OtherSlug extra={extra}></OtherSlug>
         </div>
     )
 }

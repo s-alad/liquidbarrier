@@ -1,0 +1,28 @@
+@use '../../styles/common.scss' as c;
+
+.seperator {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 1px;
+    background-color: c.$primary;
+}
+
+.otherarticles {
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        color: c.$primary;
+        margin-bottom: 8px;
+    }
+    .otherarticle {
+        .othertitle {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

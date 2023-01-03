@@ -2,6 +2,7 @@ import {getCreative, getAllCreatives } from '../../api/content'
 import { /* documentToHtmlString,  */documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import s from './creativeslug.module.css'
+import OtherSlug from '../../components/otherslug/otherslug';
 
 export async function getStaticPaths() {
 
@@ -17,16 +18,17 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params}:any) {
     let data = await getCreative(params.slug);
-
+    let extra = await getAllCreatives();
     return {
         props: {
-            piece: data[0]
+            piece: data[0],
+            extra: extra.filter((piece:any) => piece.fields.slug !== params.slug)
         },
         revalidate: 60
     }
 }
 
-export default function Creative({piece}:any) {
+export default function Creative({piece, extra}:any) {
     console.log(piece)
     return (
         <div className={s.creative}>
@@ -36,6 +38,7 @@ export default function Creative({piece}:any) {
             <div className={s.content}>
                {documentToReactComponents(piece['fields']['content'])}
             </div>
+            <OtherSlug extra={extra}></OtherSlug>
         </div>
     )
 }

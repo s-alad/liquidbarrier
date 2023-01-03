@@ -1,0 +1,22 @@
+.seperator {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 1px;
+  background-color: #dc3545;
+}
+
+.otherarticles .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #dc3545;
+  margin-bottom: 8px;
+}
+.otherarticles .otherarticle .othertitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-decoration: underline;
+  cursor: pointer;
+}/*# sourceMappingURL=other.module.css.map */
