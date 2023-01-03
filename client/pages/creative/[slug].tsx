@@ -29,7 +29,6 @@ export async function getStaticProps({params}:any) {
 }
 
 export default function Creative({piece, extra}:any) {
-    console.log(piece)
     return (
         <div className={s.creative}>
             <h1 className={s.title}>{piece['fields']['title']}</h1>
