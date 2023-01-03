@@ -52,7 +52,7 @@ export default function Footer() {
                         <Link href="https://www.instagram.com/liquidbarrier/"><i aria-hidden className={"fa fa-instagram "+s.social}></i></Link>
                         <Link href="https://www.linkedin.com/company/liquidbarrier"><i aria-hidden className={"fa fa-linkedin "+s.social}></i></Link> */}
                     </div>
-                    <div className={s.rights}>copyright © 2022</div>
+                    <div className={s.rights}>copyright © 2023</div>
                 </div>
             </div>
         </>
