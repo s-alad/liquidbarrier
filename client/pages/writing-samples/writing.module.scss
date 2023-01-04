@@ -13,6 +13,7 @@
     }
     .title {
         @include c.minimal;
+        margin: auto;
         padding-top: 40px;
         padding-bottom: 40px;
         color: c.$primary;
