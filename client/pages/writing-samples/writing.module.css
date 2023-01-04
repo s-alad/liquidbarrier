@@ -11,8 +11,8 @@
   font-weight: 700;
 }
 .writing .title {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 40px;
   color: #dc3545;
@@ -20,4 +20,12 @@
   font-family: "Sarabun", sans-serif;
   font-weight: 600;
   margin: 0;
+}
+@media screen and (max-width: 1250px) {
+  .writing .title {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }/*# sourceMappingURL=writing.module.css.map */

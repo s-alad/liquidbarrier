@@ -12,7 +12,7 @@
         font-weight: 700;
     }
     .title {
-        @include c.default;
+        @include c.minimal;
         padding-top: 40px;
         padding-bottom: 40px;
         color: c.$primary;
