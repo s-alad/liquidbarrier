@@ -26,11 +26,11 @@ export default function Person(person: PersonProps) {
                     <h1 className={s.title}>{person.name}</h1>
                     <div className={s.row}>
                         
-                        <h2 className={s.position}>{/* <Link href={person.linkedin} target={'_blank'}><FontAwesomeIcon icon={faLinkedin} /></Link> */}{person.position}</h2>
+                        <h2 className={s.position}><Link href={person.linkedin} target={'_blank'}><FontAwesomeIcon icon={faLinkedin} /></Link>{person.position}</h2>
                     </div>
-                    <div className={s.row}>
-                    <Link href={person.linkedin} target={'_blank'}><FontAwesomeIcon icon={faLinkedin} /></Link>
-                    </div>
+
+                    {/* <Link href={person.linkedin} target={'_blank'}><FontAwesomeIcon icon={faLinkedin} /></Link> */}
+
                     <p className={s.bio}>{person.bio}</p>
                 </div>
             </div>
