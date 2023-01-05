@@ -55,11 +55,11 @@ export default function Diversity() {
                     </Image>
                 </div>
             </div>
-            <div className={s.colortoggle} >
+            {/* <div className={s.colortoggle} >
                 <div onClick={(toggleColor)}>
                     <Gobutton text={'Color'} link={''}></Gobutton>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
