@@ -1,6 +1,14 @@
 .articles {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .articles {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .articles .title {
   font-size: 30px;

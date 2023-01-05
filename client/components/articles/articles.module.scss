@@ -1,6 +1,6 @@
 @use '../../styles/common.scss' as c;
 .articles {
-    @include c.default;
+    @include c.minimal;
     .title {
         font-size: 30px;
         color: #fff;
