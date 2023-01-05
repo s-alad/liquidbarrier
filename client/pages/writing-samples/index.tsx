@@ -23,8 +23,12 @@ export async function getStaticProps() {
 export default function Writing({articles, press, creatives}:any) {
     return (
         <div className={s.writing}>
-            <div className={s.banner}></div>
-            <div className={s.title}>Writing Samples</div>
+            <div className={s.banner}>
+                <div className={s.bannertext}>
+                    Writing Samples
+                </div>
+            </div>
+            {/* <div className={s.title}>Writing Samples</div> */}
             <Articles articles={articles}></Articles>
             <Press press={press}></Press>
             <Creative creatives={creatives}></Creative>

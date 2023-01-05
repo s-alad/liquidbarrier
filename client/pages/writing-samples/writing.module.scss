@@ -5,11 +5,14 @@
         background-size: cover;
         height: 300px;
         width: 100%;
-        @include c.default;
         padding-top: 60px;
         font-size: 40px;
         line-height: 1;
         font-weight: 700;
+        .bannertext {
+            @include c.minimal;
+        }
+        margin-bottom: 40px;
     }
     .title {
         @include c.minimal;
