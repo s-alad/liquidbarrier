@@ -5,7 +5,7 @@
         background-size: cover;
         height: 300px;
         width: 100%;
-        @include c.minimal;
+        @include c.default;
         padding-top: 60px;
         font-size: 40px;
         line-height: 1;
@@ -20,6 +20,5 @@
         font-size: 36px;
         font-family: "Sarabun", sans-serif;
         font-weight: 600;
-        margin: 0;
     }
 }
