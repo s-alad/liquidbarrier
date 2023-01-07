@@ -46,6 +46,19 @@ function getCreative(slug: string) {
     }).then((response: { items: any; }) => response.items)
 }
 
+function getAllProposals() {
+    return client.getEntries({
+        content_type: 'proposal'
+    }).then((response: { items: any; }) => response.items)
+}
+
+function getProposal(slug: string) {
+    return client.getEntries({
+        content_type: 'proposal',
+        'fields.slug': slug
+    }).then((response: { items: any; }) => response.items)
+}
+
 function getAllMembers() {
     return client.getEntries({
         content_type: 'member'
@@ -53,4 +66,4 @@ function getAllMembers() {
 }
 
 
-export {getArticle, getAllArticles, getPress, getAllPress, getCreative, getAllCreatives, getAllMembers}
+export {getArticle, getAllArticles, getPress, getAllPress, getCreative, getAllCreatives, getAllMembers, getProposal, getAllProposals}

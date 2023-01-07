@@ -1,0 +1,45 @@
+.proposals {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+@media screen and (max-width: 1250px) {
+  .proposals {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
+}
+.proposals .title {
+  font-size: 30px;
+  color: #dc3545;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.proposals .paper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
+  /* justify-content: space-between; */
+}
+.proposals .paper .piece {
+  /* max-width: 31%; */
+}
+.proposals .paper .piece .title {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+.proposals .paper .piece .date {
+  font-size: 16px;
+}
+.proposals .paper .piece img {
+  width: 100%;
+  height: 200px;
+}
+.proposals .paper .piece .preview {
+  margin-top: 10px;
+}/*# sourceMappingURL=proposals.module.css.map */
