@@ -1,0 +1,27 @@
+.proposal {
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
+  padding-top: 40px;
+}
+.proposal a {
+  text-decoration: none;
+  color: #007bff;
+}
+.proposal .title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+.proposal .author {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.proposal .date {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+.proposal .content {
+  margin-top: 20px;
+}/*# sourceMappingURL=proposalslug.module.css.map */

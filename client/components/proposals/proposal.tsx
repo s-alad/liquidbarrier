@@ -12,7 +12,7 @@ export default function Proposals({proposals}: any) {
             <div className={s.paper}>
                 {
                     proposals.map((piece: any) => (
-                        <Link href={'/creative/' + piece.fields.slug} className={s.piece} key={piece.sys.id}>
+                        <Link href={'/proposals/' + piece.fields.slug} className={s.piece} key={piece.sys.id}>
                             <div>
                                 <Image
                                     src={"https:"+piece['fields']['banner']['fields']['file']['url']}
