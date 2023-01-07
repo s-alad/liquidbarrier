@@ -1,7 +1,7 @@
 
 @use '../../styles/common.scss' as c;
 .creative {
-    @include c.default;
+    @include c.minimal;
     padding-top: 80px;
 
     .title {
@@ -13,10 +13,10 @@
     .paper {
         display: grid;
         gap: 40px;
-        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
         /* justify-content: space-between; */
         .piece {
-            max-width: 31%;
+            /* max-width: 31%; */
             
             .title {
                 font-size: 20px;

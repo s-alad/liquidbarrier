@@ -1,7 +1,15 @@
 .creative {
-  padding-left: var(--default-padding);
-  padding-right: var(--default-padding);
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 80px;
+}
+@media screen and (max-width: 1250px) {
+  .creative {
+    padding-left: var(--default-padding);
+    padding-right: var(--default-padding);
+    max-width: none !important;
+    margin: none !important;
+  }
 }
 .creative .title {
   font-size: 30px;
@@ -12,11 +20,11 @@
 .creative .paper {
   display: grid;
   gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
   /* justify-content: space-between; */
 }
 .creative .paper .piece {
-  max-width: 31%;
+  /* max-width: 31%; */
 }
 .creative .paper .piece .title {
   font-size: 20px;
