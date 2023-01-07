@@ -13,7 +13,8 @@
     .paper {
         display: grid;
         gap: 40px;
-        grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
+        /* grid-template-columns: repeat(auto-fit, minmax(30%, 30%)); */
+        grid-template-columns: repeat(3, 1fr);
         /* justify-content: space-between; */
         .piece {
             /* max-width: 31%; */
